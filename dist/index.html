@@ -7,76 +7,196 @@
 <title>Madhura Madhava Santhosh | DevOps Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Archivo+Black&amp;display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:light;--paper:#faf6ef;--ink:#17263d;--muted:#46536a;--line:#dcd1bd;--gold:#edd1a0;--serif:"Playfair Display",Georgia,'Times New Roman',serif}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 "DM Sans",system-ui,sans-serif}
-.wrap{width:min(1120px,calc(100% - 64px));margin:auto}
-a{color:inherit;text-underline-offset:.3em}
-a:focus-visible{outline:2px solid currentColor;outline-offset:5px}
-header{border-bottom:1px solid var(--line)}
-.bar,nav,.actions{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
-.bar{justify-content:space-between;min-height:74px;padding:.8rem 0}
-.brand,nav a{text-decoration:none}
-.brand{font:700 1.13rem var(--serif);letter-spacing:.02em}
-nav a{font-size:.91rem;color:var(--muted)}
-nav a:hover{text-decoration:underline}
-.hero{display:grid;grid-template-columns:1.55fr 1fr;align-items:center;gap:clamp(2rem,6vw,6rem);padding:clamp(4rem,9vw,8rem) 0}
-h1,h2,h3,p,figure{margin:0}
-h1,h2,h3{font-family:var(--serif);font-weight:500}
-h1{font-size:clamp(3.2rem,7vw,6.25rem);line-height:.98;letter-spacing:-.048em;margin:1.2rem 0 1.4rem}
-h2{font-size:clamp(2.25rem,4.2vw,3.45rem);line-height:1.07;letter-spacing:-.04em;margin-bottom:1.4rem}
-h3{font-size:1.48rem;line-height:1.25}
-p,li{color:var(--muted)}
-.eyebrow,.tag{font-size:.73rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
-.intro{font-size:1.13rem;max-width:36rem}
-.actions{gap:.75rem;margin-top:1.7rem}
-.button{display:inline-block;padding:.65rem 1rem;border:1px solid #7f725e;border-radius:.25rem;text-decoration:none;font-size:.92rem;font-weight:650}
-.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.button:hover{text-decoration:underline}
-.summary{position:relative;overflow:hidden;background:#182a45;color:var(--paper);padding:clamp(1.5rem,4vw,2.6rem);border-radius:.25rem;box-shadow:0 18px 35px #17263d1e}
-.summary .tag{color:var(--gold)}
-.summary dl{margin:1.15rem 0 0}
-.summary dl div{padding:.85rem 0;border-top:1px solid #f7f4ee40}
-.summary dt{font:2.25rem/1.15 var(--serif);color:var(--paper)}
-.summary dd{margin:.25rem 0 0;font-size:.89rem;color:#e1e7f2}
-section:not(.hero){border-top:1px solid var(--line);padding:clamp(3rem,6vw,5rem) 0}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.6rem}
-.card{border-top:1px solid var(--line);padding:1.2rem 0 1.45rem}
-.card p{margin-top:.55rem}
-.card .tag{margin:0 0 .45rem;color:#695438}
-.experience{display:grid;grid-template-columns:1fr 1.65fr;gap:1.8rem}
-.experience ul{margin:0;padding-left:1.15rem}
-.experience li+li{margin-top:.62rem}
-section.contact{background:#efe6d7;padding-inline:clamp(1.2rem,5vw,3.3rem);margin-bottom:3rem;border:0;border-radius:.25rem}
-.contact p+p{margin-top:.35rem}
-.contact a{overflow-wrap:anywhere}
-footer{border-top:1px solid var(--line);padding:1.4rem 0;color:var(--muted);font-size:.9rem}
-@media(max-width:700px){.hero,.experience,.grid{grid-template-columns:1fr}.wrap{width:calc(100% - 32px)}.bar{gap:.65rem}.hero{gap:2rem}nav{gap:.9rem}.intro{font-size:1rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+:root {
+  color-scheme: dark;
+  --background: #191310;
+  --surface: #251c17;
+  --cream: #f6ead9;
+  --muted: #d4c1ae;
+  --gold: #d9b681;
+  --line: #5b4739;
+  --serif: "Playfair Display", Georgia, serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at 83% 9%, #493024 0, transparent 35rem), var(--background);
+  color: var(--cream);
+  font: 1rem/1.7 "DM Sans", system-ui, sans-serif;
+}
+.wrap { width: min(1120px, calc(100% - 64px)); margin-inline: auto; }
+a { color: var(--gold); text-underline-offset: .28em; }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
+header { border-bottom: 1px solid var(--line); background: #191310; }
+.bar, nav, .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.15rem; }
+.bar { justify-content: space-between; min-height: 76px; padding-block: .9rem; }
+.brand { color: var(--cream); font: 600 1.25rem var(--serif); }
+.brand, nav a { text-decoration: none; }
+nav a { color: var(--muted); font-size: .9rem; }
+nav a:hover { color: var(--gold); text-decoration: underline; }
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, .9fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: center;
+  padding-block: clamp(3.75rem, 8vw, 7rem);
+}
+h1, h2, h3, p, figure { margin: 0; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; }
+h1 { margin: 1rem 0 1.5rem; font-size: clamp(2.65rem, 6.5vw, 5.75rem); line-height: 1.02; letter-spacing: -.045em; }
+h2 { margin-bottom: 1.65rem; font-size: clamp(2.1rem, 4vw, 3.25rem); line-height: 1.15; letter-spacing: -.03em; }
+h3 { font-size: 1.4rem; line-height: 1.3; }
+p, li { color: var(--muted); }
+.eyebrow, .tag { color: var(--gold); font-size: .76rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.intro { max-width: 35rem; font-size: 1.1rem; }
+.actions { gap: .75rem; margin-top: 1.5rem; }
+.button {
+  display: inline-block;
+  max-width: 100%;
+  padding: .65rem 1.05rem;
+  border: 1px solid #9b7c58;
+  border-radius: .18rem;
+  color: var(--cream);
+  font-size: .92rem;
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.primary { background: var(--gold); color: var(--background); border-color: var(--gold); }
+.button:hover { text-decoration: underline; }
+.portrait {
+  width: min(100%, 380px);
+  justify-self: end;
+  padding: 10px;
+  background: #322318;
+  border: 1px solid #ab8960;
+  box-shadow: 0 20px 50px #0d090780;
+}
+.portrait img { display: block; width: 100%; height: auto; }
+.summary {
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+  padding: clamp(1.3rem, 3vw, 2.1rem);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.summary dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin: 1rem 0 0; }
+.summary dl div { border-top: 1px solid var(--line); padding-top: .75rem; }
+.summary dt { color: var(--cream); font: clamp(1.55rem, 3vw, 2.2rem)/1.2 var(--serif); }
+.summary dd { margin: .4rem 0 0; color: var(--muted); font-size: .9rem; }
+section:not(.hero) { border-top: 1px solid var(--line); padding-block: clamp(2.8rem, 6vw, 4.5rem); }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.card { padding: 1.3rem; border: 1px solid var(--line); background: var(--surface); }
+.card p { margin-top: .55rem; }
+.card .tag { margin: 0 0 .6rem; }
+.experience { display: grid; grid-template-columns: 1fr 1.6fr; gap: 2rem; }
+.experience ul { margin: 0; padding-left: 1.2rem; }
+.experience li + li { margin-top: .65rem; }
+section.contact {
+  margin-bottom: 3rem;
+  padding-inline: clamp(1.25rem, 5vw, 3rem);
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, #332319, var(--surface));
+}
+.contact p + p { margin-top: .35rem; }
+footer { border-top: 1px solid var(--line); padding-block: 1.35rem; color: var(--muted); font-size: .9rem; }
+@media (max-width: 740px) {
+  .wrap { width: calc(100% - 32px); }
+  .hero, .experience { grid-template-columns: 1fr; gap: 1.6rem; }
+  .portrait { justify-self: start; width: min(100%, 300px); }
+  nav { gap: .75rem; }
+}
+@media (max-width: 560px) {
+  .grid, .summary dl { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 
-body{background:radial-gradient(ellipse at 82% 8%,#f0e3d1,transparent 37rem),var(--paper)}
-.hero{grid-template-columns:1.65fr 1fr;gap:clamp(2rem,7vw,7rem)}
-.portrait{width:min(100%,390px);justify-self:center;padding:11px;background:#fffaf2;border:1px solid #cbb48b;box-shadow:0 18px 55px #17263d25}
-.portrait img{display:block;width:100%;height:auto}
-.summary{margin:0 0 clamp(3rem,6vw,5rem);box-shadow:none}
-.summary dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
-.summary dt{font-size:clamp(1.65rem,3vw,2.25rem)}
-@media(max-width:700px){.hero{grid-template-columns:1fr}.portrait{justify-self:start;width:min(74%,300px)}}
-@media(max-width:550px){.summary dl{grid-template-columns:1fr;gap:0}}
+:root {
+  --background: #101010;
+  --surface: #191919;
+  --cream: #f6f6f6;
+  --muted: #c1c1c1;
+  --gold: #ff7566;
+  --red: #c8392b;
+  --line: #393939;
+}
+body { background: var(--background); }
+header { background: var(--background); }
+.brand, h1, h2, h3, .summary dt {
+  font-family: "Archivo Black", "Arial Black", sans-serif;
+  font-weight: 400;
+}
+.brand { font-size: 1rem; }
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  grid-template-columns: minmax(0, 1.17fr) minmax(0, 1fr);
+  min-height: clamp(480px, 52vw, 630px);
+  align-items: center;
+  gap: 1.5rem;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  margin-block: 1.75rem 1.5rem;
+  border: 1px solid #282828;
+  border-radius: clamp(1.35rem, 4vw, 3.4rem);
+  background: #111;
+}
+.hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 42%;
+  background: linear-gradient(125deg, #2c2c2c, #151515 65%, #090909);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+  content: "";
+}
+h1 {
+  font-size: clamp(2.25rem, 4.7vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -.045em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+h2 { font-size: clamp(1.65rem, 3.1vw, 2.6rem); }
+h3 { font-size: 1.15rem; }
+.summary dt { font-size: clamp(1.1rem, 2.1vw, 1.6rem); }
+.eyebrow { display: flex; align-items: center; gap: .65rem; }
+.eyebrow::before { content: ""; width: 1.5rem; height: 2px; background: currentColor; flex: none; }
+.button { border-color: #777; }
+.primary { background: var(--red); border-color: var(--red); color: white; }
+.portrait {
+  align-self: end;
+  width: min(100%, 400px);
+  margin-bottom: calc(-1 * clamp(2rem, 5vw, 4.5rem));
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.portrait img {
+  filter: grayscale(1) brightness(.86) contrast(1.14);
+  mask-image: radial-gradient(ellipse 72% 68% at 51% 48%, #000 49%, transparent 98%);
+}
+section.contact { background: linear-gradient(125deg, #242020, #161616); }
+@media (max-width: 740px) {
+  .hero { grid-template-columns: minmax(0, 1fr); min-height: auto; padding: 1.5rem; }
+  .hero::before { inset: 36% 0 0 10%; }
+  .portrait { width: min(100%, 300px); justify-self: center; margin-bottom: -1.5rem; }
+}
 </style>
 </head>
 <body>
-<header><div class="wrap bar"><a class="brand" href="#top" aria-label="Santhosh, home">Madhava Santhosh</a><nav aria-label="Portfolio"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#work">Selected work</a><a href="#contact">Contact</a></nav></div></header>
+<header><div class="wrap bar"><a class="brand" href="#top" aria-label="Santhosh, home">Madhava Santhosh</a><nav aria-label="Portfolio"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#work">Selected work</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></div></header>
 <main class="wrap" id="top">
 <section class="hero" aria-labelledby="name">
-<div><p class="eyebrow">DevOps Engineer · Chennai, India</p><h1 id="name">Madhura Madhava Santhosh</h1><p class="intro">I build release pipelines and support AWS-hosted lending applications at Hotfoot Technology Solutions. My work spans deployment automation, cloud infrastructure, and production incident response.</p><div class="actions"><a class="button primary" href="mailto:madhavasanthosh85@gmail.com">Email me</a><a class="button" href="#work">Explore my work</a></div></div>
+<div><p class="eyebrow">DevOps Engineer · Chennai, India</p><h1 id="name">Madhura Madhava Santhosh</h1><p class="intro">I build release pipelines and support AWS-hosted lending applications at Hotfoot Technology Solutions. My work spans deployment automation, cloud infrastructure, and production incident response.</p><div class="actions"><a class="button primary" href="mailto:madhavasanthosh85@gmail.com">Email me</a><a class="button" href="#work">View portfolio</a></div></div>
 <figure class="portrait"><img src="santhosh-portrait.jpg" width="864" height="1060" alt="Madhura Madhava Santhosh in a navy suit"></figure>
 </section>
 <figure class="summary"><figcaption class="tag">DevOps at Hotfoot Technology Solutions</figcaption><dl>
-<div><dt>2+ years</dt><dd>DevOps and production support</dd></div>
+<div><dt>Since Dec 2024</dt><dd>DevOps and production support</dd></div>
 <div><dt>30+ microservices</dt><dd>Java and Spring Boot releases supported across SIT, UAT and production</dd></div>
 <div><dt>~2 hours to 45 min</dt><dd>Release time after deployment automation</dd></div>
 </dl></figure>
@@ -96,7 +216,7 @@ body{background:radial-gradient(ellipse at 82% 8%,#f0e3d1,transparent 37rem),var
     </article>
   </div>
 </section>
-<section id="contact" class="contact"><h2>Contact</h2><p>Open to AWS DevOps Engineer, Cloud Engineer and CI/CD Engineer roles.</p><p>Hyderabad · Bengaluru · Pune · Chennai · Remote India</p><div class="actions"><a class="button primary" href="mailto:madhavasanthosh85@gmail.com">madhavasanthosh85@gmail.com</a><a class="button" href="https://www.linkedin.com/in/m-madhava-santhosh-a22288213">LinkedIn</a><a class="button" href="tel:+919391713745">+91 9391713745</a></div></section>
+<section id="contact" class="contact"><h2>Contact</h2><p>Open to AWS DevOps Engineer, Cloud Engineer and CI/CD Engineer roles.</p><p>Hyderabad · Bengaluru · Pune · Chennai · Mumbai · Remote India</p><div class="actions"><a class="button primary" href="mailto:madhavasanthosh85@gmail.com">madhavasanthosh85@gmail.com</a><a class="button" href="https://www.linkedin.com/in/m-madhava-santhosh-a22288213">LinkedIn</a><a class="button" href="tel:+919391713745">+91 9391713745</a></div></section>
 </main>
 <footer><div class="wrap">Madhura Madhava Santhosh · DevOps Engineer</div></footer>
 </body>
